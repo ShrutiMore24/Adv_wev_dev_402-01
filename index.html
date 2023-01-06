@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 70%;
+            /* height: 40vh; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid black;
+        }
+        #google{
+            font-size: 50px;
+        }
+
+       .input{
+        height: 50px;
+        /* border: 1px solid red; */
+        width: 100%;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+       }
+       .input input{
+        width: 60%;
+        height: 50px;
+        border-radius: 30px;
+       }
+       .btns{
+        margin: 20px;
+       }
+       .btns button{
+        margin: 10px;
+        padding: 10px;
+        font-size: 15px;
+       }
+       .fa-magnifying-glass{
+        font-size: 20px;
+        position: relative;
+        top: 0px;
+        left: 50px;
+       }
+       .fa-microphone-lines{
+        font-size: 20px;
+        position: relative;
+        top: 0px;
+        right: 42px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="google"> GOOGLE</p>
+        <div class="input"><i class="fa-solid fa-magnifying-glass"></i><input type="text"><i class="fa-solid fa-microphone-lines"></i></div>
+
+        <div class="btns">
+            <button id="txt" onclick="fun()">Google Search</button>
+            <button>I'm Feeling Lucky </button>
+
+        </div>
+
+        <p>Google offered in  : <a href="">hindi</a>  <a href="">hindi</a>   <a href="">hindi</a>    <a href="">hindi</a>  </p>
+    </div>
+
+
+    <script>
+        function fun(){
+        var text = document.getElementById("txt");     
+        text.innerHTML="Geekster Search"; 
+        }
+    </script>
+</body>
+</html>
